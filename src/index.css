@@ -1,0 +1,121 @@
+/* Import Google Fonts (Lilita One, Oswald, Roboto) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Common CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  /* Fonts Family */
+  --Inter-font: "Inter", sans-serif;
+  --Rubik-font: "Rubik", sans-serif; 
+
+  /* Colors */
+  --color-primary: #333;
+  --color-secondary: #F7F7F7;
+  --color-53a2590: #4248B4;
+  --color-0033bc7: #FF97DA;
+  --color-red:red;
+  --white: #fff;
+  --anchor-hover:#b478cb;
+  --anchor-text-color:#fff;
+  --text-color:#7A7A7A;
+  --bg-hover:#f8e7ff;
+  --text-bg:#f6deff;
+  --border-color:#E7E5EA;
+}
+
+body,
+html {
+  font-size: 1rem;
+  font-family: var(--Rubik-font);
+  font-weight: 300;
+}
+p{font-family: var(--Rubik-font);}
+@media (max-width: 992px) {
+  body,
+  html {
+    font-size: 0.875rem;
+  }
+}
+
+/* Headline Tag */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--Inter-font);
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+p {
+  font-size: 16px;
+}
+
+/* Achor Tag */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+/* Custom Scrollbar */
+ 
+::-webkit-scrollbar-track { 
+	width: 12px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+/* Common Button */
+.contact_now {
+  color: var(--anchor-text-color);
+  background:transprent;
+  background-image: linear-gradient(206deg, var(--color-53a2590) 0%, var(--color-0033bc7) 100%);
+  border-radius: 50px 50px 50px 50px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: var(--Inter-font); 
+  text-transform: uppercase; 
+  transition-duration: .3s;
+  transition-property: transform;
+  display: flex;
+}
+.contact_now:hover,
+.contact_now:focus {
+  transform: scale(1.1);
+}
+
+.submitbtn{
+  color: var(--anchor-text-color);
+  background:transprent;
+  background-image: linear-gradient(206deg, var(--color-53a2590) 0%, var(--color-0033bc7) 100%);
+  border-radius: 50px 50px 50px 50px !important;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: var(--Inter-font); 
+  text-transform: uppercase; 
+  transition-duration: .3s;
+  transition-property: transform;
+  border:none !important;
+  padding: 8px 35px !important;
+}
+
+ 
